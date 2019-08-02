@@ -11,6 +11,7 @@ import PropTypes from "prop-types";
 
 // import "normalize.css/normalize.css";
 import "tachyons/css/tachyons.css";
+import "../styles/type.css";
 
 const Layout = ({ children }) => {
   // const data = useStaticQuery(graphql`
@@ -25,7 +26,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <main className="sans-serif center mw8">{children}</main>
+      <main className="sans-serif">{children}</main>
     </>
   );
 };
@@ -34,4 +35,20 @@ Layout.propTypes = {
   children: PropTypes.node.isRequired,
 };
 
+const Section = ({ background, className, children }) => (
+  <div
+    className={"pv5 ph4 " + className}
+    style={{
+      backgroundImage: `url(${background})`,
+    }}
+  >
+    {children}
+  </div>
+);
+
+Section.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
 export default Layout;
+export { Section };

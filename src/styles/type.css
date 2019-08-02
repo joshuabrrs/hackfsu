@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Galano";
+  src: url("../fonts/Galano_Grotesque_DEMO_Bold.woff") format("woff"),
+    url("../fonts/Galano_Grotesque_DEMO_Bold.otf") format("oft");
+}
+
+@font-face {
+  font-family: "AvenirLT-Medium";
+  src: url("../fonts/AvenirLTStd-Medium.woff") format("woff"),
+    url("../fonts/AvenirLTStd-Medium.otf") format("oft");
+}
+
+@font-face {
+  font-family: "AvenirLT-Book";
+  src: url("../fonts/AvenirLTStd-Book.woff") format("woff"),
+    url("../fonts/AvenirLTStd-Book.otf") format("oft");
+}
+
+.galano {
+  font-family: "Galano", -apple-system, BlinkMacSystemFont, "avenir next",
+    avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
+    sans-serif;
+}
+
+.avenir-book {
+  font-family: "AvenirLT-Book", -apple-system, BlinkMacSystemFont, "avenir next",
+    avenir, "helvetica neue", helvetica, ubuntu, roboto, noto, "segoe ui", arial,
+    sans-serif;
+}
+
+.avenir-medium {
+  font-weight: 700;
+  font-family: "AvenirLT-Medium", -apple-system, BlinkMacSystemFont,
+    "avenir next", avenir, "helvetica neue", helvetica, ubuntu, roboto, noto,
+    "segoe ui", arial, sans-serif;
+}
+
+.type-blue {
+  color: #355e9b;
+}
+
+.type-grey {
+  color: #525252;
+}
+
+.bg-light-blue {
+  background-color: #65c4df;
+}
+
+.bg-very-light-blue {
+  background-color: #eff8fe;
+}
+
+.bg-dark-blue {
+  backgoround-color: #355e9b;
+}
