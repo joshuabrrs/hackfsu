@@ -10,4 +10,9 @@ const PrimaryButton = ({ text, href }) => (
   </a>
 );
 
+PrimaryButton.propTypes = {
+  text: PropTypes.string.isRequired,
+  href: PropTypes.string.isRequired,
+};
+
 export { PrimaryButton };

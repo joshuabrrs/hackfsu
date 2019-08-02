@@ -46,11 +46,11 @@ const IndexPage = () => (
       <Content>
         <h1 className="galano f2 black-70">{content.details.header}</h1>
         <HeaderDivider />
-        {content.details.items.map(el => (
-          <>
+        {content.details.items.map((el, i) => (
+          <div key={i}>
             <h2 className="galano f3 black-70 mt4">{el.header}</h2>
             <p className="avenir-book f3-ns f4 black-70">{el.body}</p>
-          </>
+          </div>
         ))}
       </Content>
     </Section>
@@ -59,8 +59,8 @@ const IndexPage = () => (
       <Content>
         <h1 className="galano f2 white-90">{content.faqs.header}</h1>
         <HeaderDivider />
-        {content.faqs.items.map(el => (
-          <FAQ header={el.header.replace(".", "?")} body={el.body} />
+        {content.faqs.items.map((el, i) => (
+          <FAQ key={i} header={el.header.replace(".", "?")} body={el.body} />
         ))}
       </Content>
     </Section>
@@ -68,7 +68,7 @@ const IndexPage = () => (
       <Content>
         <div className="flex-l">
           <div className="flex flex-column justify-center dn-s">
-            <img className="mw5 mv4" src={telescope} />
+            <img alt="HackFSU Telescope" className="mw5 mv4" src={telescope} />
           </div>
           <div className="mh5-l">
             <h1 className="galano f2 black-70">{content.culture.header}</h1>

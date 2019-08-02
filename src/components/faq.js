@@ -33,4 +33,9 @@ class FAQ extends React.Component {
   }
 }
 
+FAQ.propTypes = {
+  header: PropTypes.string.isRequired,
+  body: PropTypes.string.isRequired,
+};
+
 export default FAQ;
