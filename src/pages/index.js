@@ -8,7 +8,8 @@ import { RainbowDivider } from "../components/dividers";
 import { PrimaryButton } from "../components/button";
 import content from "../content";
 
-import bgHeader from "../images/background_shapes.svg";
+import bgShapes from "../images/background_shapes.svg";
+import telescope from "../images/img_telescope.png";
 
 const HeaderDivider = () => (
   <div
@@ -23,7 +24,7 @@ const HeaderDivider = () => (
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <Section background={bgHeader} className="bg-very-light-blue">
+    <Section background={bgShapes} className="bg-very-light-blue">
       <div className="center flex flex-column justify-center items-center mw7 vh-75 tc">
         <h1 className="lh-copy f-6-l f1-m f2 mv1 galano type-blue">
           featherhacks
@@ -53,11 +54,30 @@ const IndexPage = () => (
 
     <Section className="bg-dark-blue">
       <Content>
-        <h1 className="galano f2 white-90">FAQs</h1>
+        <h1 className="galano f2 white-90">{content.faqs.header}</h1>
         <HeaderDivider />
-        {content.details.items.map(el => (
+        {content.faqs.items.map(el => (
           <FAQ header={el.header.replace(".", "?")} body={el.body} />
         ))}
+      </Content>
+    </Section>
+    <Section background={bgShapes} className="bg-very-light-blue">
+      <Content>
+        <div className="flex-l">
+          <div className="flex flex-column justify-center dn-s">
+            <img className="mw5 mv4" src={telescope} />
+          </div>
+          <div className="mh5-l">
+            <h1 className="galano f2 black-70">{content.culture.header}</h1>
+            <HeaderDivider />
+            <h2 className="galano f3 black-70 mt4">
+              {content.culture.subheader}
+            </h2>
+            <p className="avenir-book f3-ns f4 black-70">
+              {content.culture.body}
+            </p>
+          </div>
+        </div>
       </Content>
     </Section>
   </Layout>
