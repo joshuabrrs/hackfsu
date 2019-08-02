@@ -6,8 +6,8 @@ import FAQ from "../components/faq";
 import SEO from "../components/seo";
 import { RainbowDivider } from "../components/dividers";
 import { PrimaryButton } from "../components/button";
-import content from "../content";
 
+import content from "../content";
 import bgShapes from "../images/background_shapes.svg";
 import telescope from "../images/img_telescope.png";
 
@@ -26,16 +26,19 @@ const IndexPage = () => (
     <SEO title="Home" />
     <Section background={bgShapes} className="bg-very-light-blue">
       <div className="center flex flex-column justify-center items-center mw7 vh-75 tc">
-        <h1 className="lh-copy f-6-l f1-m f2 mv1 galano type-blue">
-          featherhacks
+        <h1 className="lh-copy f-6-l f1-m f2 mv1 galano type-blue lowercase">
+          {content.main.eventName}
         </h1>
-        <p className="avenir-book tracked-mega f3-ns f5 mv1 type-grey">
-          FEATHER STATE | TALLAHACKEE, FL
+        <p className="avenir-book tracked-mega f3-ns f5 mv1 type-grey uppercase">
+          {content.main.subheader}
         </p>
-        <p className="avenir-medium tracked-mega f3-ns f5 mv1 type-grey">
-          FALL 20XX
+        <p className="avenir-medium tracked-mega f3-ns f5 mv1 type-grey uppercase">
+          {content.main.date}
         </p>
-        <PrimaryButton text={"APPLY NOW"} href={"https://hackfsu.com"} />
+        <PrimaryButton
+          text={content.main.applyText}
+          href={content.main.applyLink}
+        />
       </div>
     </Section>
     <RainbowDivider />

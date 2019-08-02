@@ -1,4 +1,14 @@
 export default {
+  main: {
+    eventName: "featherhacks",
+    subheader: "FEATHER STATE | TALLAHACKEE, FL",
+    date: "FALL 20XX",
+    applyText: "Apply Now",
+    applyLink: "https://hackfsu.com",
+    emailDisplay: "info@hackfsu.com",
+    emailLink: "mailto:info@hackfsu.com",
+    footerText: "Made with ❤️ in Tallahackee, FL",
+  },
   details: {
     header: "What's a hackathon?",
     items: [

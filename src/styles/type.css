@@ -35,6 +35,18 @@
     "segoe ui", arial, sans-serif;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
 .type-blue {
   color: #355e9b;
 }
@@ -52,5 +64,9 @@
 }
 
 .bg-dark-blue {
-  backgoround-color: #355e9b;
+  background-color: #355e9b;
+}
+
+.bg-dark-grey {
+  background-color: #414042;
 }
