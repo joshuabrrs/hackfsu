@@ -5,8 +5,8 @@ export default {
     date: "FALL 20XX",
     applyText: "Apply Now",
     applyLink: "https://hackfsu.com",
-    emailDisplay: "info@hackfsu.com",
-    emailLink: "mailto:info@hackfsu.com",
+    emailDisplay: "info@featherhacks.com",
+    emailLink: "mailto:info@featherhacks.com",
     footerText: "Made with ❤️ in Tallahackee, FL",
   },
   details: {
