@@ -23,7 +23,7 @@ const HeaderDivider = () => (
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO />
     <Section background={bgShapes} className="bg-very-light-blue">
       <div className="center flex flex-column justify-center items-center mw7 vh-75 tc">
         <h1 className="lh-copy f-6-l f1-m f2 mv1 galano type-blue lowercase">

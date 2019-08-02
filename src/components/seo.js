@@ -26,6 +26,12 @@ function SEO({ description, lang, meta, title }) {
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const titleTemplate =
+    title === undefined ? `%s` : `%s | ${site.siteMetadata.title}`;
+
+  if (title === undefined) {
+    title = site.siteMetadata.title;
+  }
 
   return (
     <Helmet
@@ -33,7 +39,7 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={titleTemplate}
       meta={[
         {
           name: `description`,
@@ -82,7 +88,7 @@ SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 };
 
 export default SEO;
