@@ -8,7 +8,7 @@ const RainbowDivider = () => (
       backgroundImage: `url(${rainbow})`,
       backgroundRepeat: "repeat-x",
       height: "4rem",
-      width: "100vw",
+      width: "100%",
     }}
   />
 );
