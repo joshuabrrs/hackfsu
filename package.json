@@ -1,6 +1,6 @@
 {
-  "name": "Featherhacks",
-  "description": "Feather State's Premier Hackathon",
+  "name": "HackFSU",
+  "description": "Florida State's Premier Hackathon",
   "version": "1.0.0",
   "author": "Andrew Sosa <andrew@andrewsosa.com>",
   "dependencies": {

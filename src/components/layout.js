@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
       <img src={feather} alt="HackFSU Logo" className="absolute h2 ma4" />
       <main className="sans-serif">{children}</main>
       <footer className="galano white tc bg-dark-grey pa4">
-        <a href={content.main.emailLink} className="no-underline f3 white">
+        <a href={content.main.emailLink} className="no-underline f3-ns white">
           {content.main.emailDisplay}
         </a>
         <p className="mv2 f4">{content.main.footerText}</p>

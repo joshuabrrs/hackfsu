@@ -26,7 +26,7 @@ const IndexPage = () => (
     <SEO />
     <Section background={bgShapes} className="bg-very-light-blue">
       <div className="center flex flex-column justify-center items-center mw7 vh-75 tc">
-        <h1 className="f-headline lh-solid mv1 galano type-blue lowercase">
+        <h1 className="f-headline-ns lh-solid mv1  galano type-blue lowercase">
           {content.main.eventName}
         </h1>
         <p className="avenir-book tracked-mega f3-ns f5 mv1 type-grey uppercase">

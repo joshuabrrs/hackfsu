@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Featherhacks`,
-    description: `A place to create. Feather State, Tallahackee FL.`,
+    title: `HackFSU`,
+    description: `A place to create. Florida State, Tallahackee FL.`,
     author: `andrewsosa`,
   },
   plugins: [
